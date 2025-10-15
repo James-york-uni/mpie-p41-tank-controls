@@ -16,8 +16,9 @@ public class NewBehaviourScript : MonoBehaviour
     {
         
         float throttle = Input.GetAxis("Vertical");
-        float rotate = Input.GetAxis("Horizontal");
         float movement = throttle * speed * Time.deltaTime;
+
+        float rotate = Input.GetAxis("Horizontal");
         float turn = rotate * turnSpeed * Time.deltaTime;
 
         Transform t = gameObject.transform;
